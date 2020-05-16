@@ -1,2 +1,2 @@
 # corrquant
-Website for crypto qunto correlation
+Website for crypto quanto correlation
