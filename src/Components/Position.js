@@ -17,6 +17,11 @@ class Position extends Component {
           {this.props.notional >= 0 && 
           <td>{this.props.notional.toFixed(4).toLocaleString('en', {useGrouping:true})}</td>}
           
+          {this.props.foreignNotional < 0 && 
+          <td data-negative>{this.props.foreignNotional.toFixed(4).toLocaleString('en', {useGrouping:true})}</td>}
+          {this.props.foreignNotional >= 0 && 
+          <td>{this.props.foreignNotional.toFixed(4).toLocaleString('en', {useGrouping:true})}</td>}
+
           <td>{this.props.entryPrice}</td>
           <td>{this.props.lastPrice}</td>
           <td>{this.props.markPrice}</td>
@@ -42,6 +47,7 @@ Position.propTypes = {
   unrealisedPnl: PropTypes.number,
   posComm: PropTypes.number,
   notional: PropTypes.number,
+  foreignNotional: PropTypes.number,
 };
 
 export default Position;

@@ -9,6 +9,8 @@ class OrderHistory extends Component {
         this.state = {
           orders: [],
         };
+
+        this.loadData = this.loadData.bind(this);
       }
 
     componentWillUnmount() {
@@ -17,7 +19,7 @@ class OrderHistory extends Component {
     
   componentDidMount() {
     this.loadData();
-    //setInterval(this.loadData, 10000);
+    setInterval(this.loadData, 30000);
   }
 
   async loadData() {

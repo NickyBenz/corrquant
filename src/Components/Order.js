@@ -12,7 +12,7 @@ class Order extends Component {
             <td>{this.props.ordType}</td>
             <td>{this.props.ordStatus}</td>
             <td>{this.props.cumQty}</td>
-            <td timestamp>{this.props.timestamp}</td>
+            <td>{this.props.timestamp}</td>
         </tr>
 
         );
@@ -28,7 +28,7 @@ Order.propTypes = {
     ordType: PropTypes.string,
     ordStatus: PropTypes.string,
     cumQty: PropTypes.number,
-    timestamp: PropTypes.any,
+    timestamp: PropTypes.string,
   };
 
 export default Order;

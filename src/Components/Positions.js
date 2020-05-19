@@ -63,6 +63,9 @@ class PositionData extends Component {
             if (items[i].homeNotional !== undefined)
                 pos[idx].notional = items[i].homeNotional;
 
+            if (items[i].foreignNotional !== undefined)
+                pos[idx].foreignNotional = items[i].foreignNotional;
+
         }
         else
         {
@@ -77,6 +80,7 @@ class PositionData extends Component {
             newpos.unrealisedPnl = items[i].unrealisedPnl;
             newpos.posComm = items[i].posComm;
             newpos.notional = items[i].homeNotional;
+            newpos.foreignNotional = items[i].foreignNotional;
             pos.push(newpos);
         }
     }  
@@ -102,15 +106,16 @@ class PositionData extends Component {
         <table>
             <thead><tr>
             <th>Symbol</th>
-            <th>Quantity</th>
-            <th>Currency</th>
-            <th>Notional</th>
+            <th>Qty</th>
+            <th>Curr</th>
+            <th>Ntnl (H)</th>
+            <th>Ntnl (F)</th>
             <th>Entry</th>
             <th>Last</th>
             <th>Mark</th>
-            <th>Liquidation</th>
+            <th>Liq</th>
             <th>Live Pnl</th>
-            <th>Commission</th></tr></thead>
+            <th>Comm</th></tr></thead>
             <tbody>
             {renderPositions(Position, positions)}
             </tbody>
