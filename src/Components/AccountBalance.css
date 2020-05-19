@@ -1,0 +1,32 @@
+.AccountBalance {
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align: center;
+  }
+  
+  .AccountBalance [data-negative] {
+    color: red;
+  }
+
+  .AccountBalance table {
+    text-align: right;
+    table-layout: fixed;
+  }
+  
+  .AccountBalance table tr:nth-child(2n) {
+    background-color:rgb(20, 20, 20);
+  }
+  
+  .AccountBalance table td {
+      width: 20ch;
+    text-align: right;
+  }
+
+  .AccountBalance table tr td:first-child {
+    color: lime;
+  }
+
+  .AccountBalance td[data-negative] {
+    color: red;
+  }

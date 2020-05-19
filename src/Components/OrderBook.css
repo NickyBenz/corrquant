@@ -1,0 +1,32 @@
+.OrderBook {
+  color: lightblue;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+}
+
+.OrderBook table {
+  width: 40ch;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  text-align: right;
+  table-layout: fixed;
+}
+
+.OrderBook table th {
+  color: lime;
+  font-weight: bolder;
+}
+
+.OrderBook table tr:nth-child(2n) {
+  background-color:rgb(20, 20, 20);
+}
+
+.OrderBook table td {
+  width: 11ch;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  text-align: right;
+}

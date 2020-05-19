@@ -1,0 +1,35 @@
+.PositionData {
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-align: center;
+    padding: 0px, 10px, 0px, 10px;
+  }
+  
+  [data-negative] {
+    color: red;
+  }
+
+  .PositionData table {
+    text-align: right;
+    table-layout: fixed;
+  }
+  
+  .PositionData table tr:nth-child(2n) {
+    background-color:rgb(20, 20, 20);
+  }
+
+  .PositionData table th {
+    font-weight: bolder;
+    color: lime;
+  }
+  
+  .PositionData table td {
+      width: 12ch;
+    text-align: right;
+  }
+  
+  .PositionData td[data-negative] {
+    color: red;
+  }
+  

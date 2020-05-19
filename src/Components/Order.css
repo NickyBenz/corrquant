@@ -1,0 +1,29 @@
+ .Order {
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-align: center;
+  }
+  
+  .Order table {
+    text-align: right;
+  }
+  
+  .Order table tr:nth-child(2n) {
+    background-color:rgb(20, 20, 20);
+  }
+
+  .Order table th {
+    font-weight: bolder;
+    color: lime;
+    width: auto;
+  }
+
+  .Order table td {
+      width: auto;
+    text-align: right;
+  }
+
+  .Order td[data-negative] {
+    color: red;
+  }
